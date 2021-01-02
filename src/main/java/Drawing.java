@@ -7,11 +7,12 @@ public class Drawing extends Canvas {
         Canvas canvas = new Drawing();
         canvas.setSize(400, 400);
         frame.add(canvas);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
     }
 
     public void paint(Graphics g) {
-        g.draw3DRect(100, 100, 200, 200, true);
+        g.drawRect(100, 100, 50, 50);
     }
 }
